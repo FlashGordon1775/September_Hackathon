@@ -1,28 +1,28 @@
 <div ng-controller="authCtrl as aControl">
-        <form ng-submit="auth.login.submit($event)">
+        <form ng-submit="aControl.login.submit($event)">
             <h1>Login!</h1>
             <fieldset>
                 <label>Email</label>
-                <input required placeholder="Email" type="email" ng-model="auth.payload.email"/>
+                <input required placeholder="Email" type="email" ng-model="aControl.payload.email"/>
             </fieldset>
             <fieldset>
                 <label for="password">Password</label>
-                <input required placeholder="Password" type="password" ng-model="auth.payload.password"/>
+                <input required placeholder="Password" type="password" ng-model="aControl.payload.password"/>
             </fieldset>
             <button type="submit">Login</button>
-            <p ng-class="auth.login.alert">{{ auth.login.message }}</p>
+            <p ng-class="aControl.login.alert">{{ aControl.login.message }}</p>
         </form>
-        <form ng-submit="auth.register.submit($event)">
+        <form ng-submit="aControl.register.submit($event)">
             <h1>Register!</h1>
             <fieldset>
                 <label>Email</label>
-                <input required placeholder="Email" type="text" ng-model="auth.payload.email"/>
+                <input required placeholder="Email" type="text" ng-model="aControl.payload.email"/>
             </fieldset>
             <fieldset>
                 <label for="password">Password</label>
-                <input required placeholder="Create a password" type="password" ng-model="auth.payload.password"/>
+                <input required placeholder="Create a password" type="password" ng-model="aControl.payload.password"/>
             </fieldset>
             <button type="submit">Register</button>
-            <p ng-class="auth.register.alert">{{ auth.register.message }}</p>
+            <p ng-class="aControl.register.alert">{{ aControl.register.message }}</p>
         </form>
     </div>

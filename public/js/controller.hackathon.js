@@ -1,4 +1,4 @@
-angular.module('Hackathon', [])
+angular.module('Hackathon')
     .controller('homeCtrl', hControl)
     .controller('authCtrl', aControl);
     
