@@ -10,9 +10,9 @@ function angularRouter ($routeProvider) {
                 controller: 'homeCtrl',
                 controllerAs: 'home',
             })
-        .when('/about',
+        .when('/auth',
             {
-                templateUrl: '/partials/about.html',
+                templateUrl: '/partials/auth.html',
             });
     
 }
