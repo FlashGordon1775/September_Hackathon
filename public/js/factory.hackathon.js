@@ -18,6 +18,5 @@ function hacktory($http) {
     return {
         getThings:    getThings,
         postThings:   postThings,
-        
     }
 };
